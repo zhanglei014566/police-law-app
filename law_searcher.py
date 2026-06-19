@@ -2,13 +2,13 @@
 法条检索匹配模块
 处理OCR识别的文字，提取关键词，匹配相关法条
 """
-from data.db_manager import LawDBManager
-from ocr.ocr_manager import OCRManager
+from db_manager import LawDBManager
+# OCR cancelled in project scope
 
 class LawSearcher:
     def __init__(self):
         self.db_manager = LawDBManager()
-        self.ocr_manager = OCRManager()
+        self.ocr_manager = None
     
     def process_image_and_search(self, image_path):
         """
@@ -23,17 +23,14 @@ class LawSearcher:
             }
         """
         # 1. OCR识别文字
-        recognized_text = self.ocr_manager.recognize_image(image_path)
-        
-        if not recognized_text:
-            return {
-                "recognized_text": "",
-                "keywords": [],
+        # OCR functionality was cancelled
+        # Using direct text input instead
+        recognized_text = image_path
+        keywords = []
                 "matched_laws": []
             }
         
         # 2. 提取关键词
-        keywords = self.ocr_manager.extract_keywords(recognized_text)
         
         # 3. 检索相关法条
         matched_laws = self.search_relevant_laws(recognized_text, keywords)
