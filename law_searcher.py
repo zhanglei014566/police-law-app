@@ -27,8 +27,6 @@ class LawSearcher:
         # Using direct text input instead
         recognized_text = image_path
         keywords = []
-                "matched_laws": []
-            }
         
         # 2. 提取关键词
         
