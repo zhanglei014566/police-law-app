@@ -32,7 +32,7 @@ def get_searcher():
     global searcher
     if searcher is None:
         try:
-            from search.law_searcher import LawSearcher
+            from law_searcher import LawSearcher
             searcher = LawSearcher()
         except Exception as e:
             print('[错误] 法条搜索模块加载失败:', e)
