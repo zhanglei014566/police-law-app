@@ -1,0 +1,28 @@
+{
+  "instructions": "手动导入《治安管理处罚法》法条 - 完整模板",
+  "usage": "填写所有法条内容后，运行：python import_from_json.py security_law_full.json",
+  "note": "当前数据库已有32条，此模板包含剩余112条（第33-144条）",
+  "articles": [
+    {
+      "article_number": "第三十三条",
+      "article_content": "请输入完整法条内容",
+      "category": "妨害公共安全的行为和处罚",
+      "keywords": "关键词1,关键词2",
+      "law_name": "中华人民共和国治安管理处罚法"
+    },
+    {
+      "article_number": "第三十四条",
+      "article_content": "请输入完整法条内容",
+      "category": "妨害公共安全的行为和处罚",
+      "keywords": "关键词1,关键词2",
+      "law_name": "中华人民共和国治安管理处罚法"
+    },
+    {
+      "article_number": "第三十五条",
+      "article_content": "请输入完整法条内容",
+      "category": "妨害公共安全的行为和处罚",
+      "keywords": "关键词1,关键词2",
+      "law_name": "中华人民共和国治安管理处罚法"
+    }
+  ]
+}
